@@ -1893,7 +1893,7 @@ def destroy_decide(a,b):
 #A = [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20]
 #A = [0,2,4,6,8,10,12,14,16,18,20,22,24,26,28,30,32,34,36,38,40]
 A = [0,1,2,3,4,5,6,7,8,9,10]
-"""
+
 iteration_number = 0
 route = copy.deepcopy(first_route)
 using_truck = first_using_truck
@@ -1905,7 +1905,7 @@ time_number = 0
 first_number = 0
 second_number = 0
 third_number = 0
-while time_number <= 300:
+while time_number <= 10:
 #while iteration_number <= 100:
     now = time.perf_counter()
     if now - start1 > time_number:
@@ -1946,8 +1946,8 @@ print(route)
 print(route_possibility(route))
 print("objective_value",objective_value)
 print("値",(first_number,second_number,third_number))
-"""
 
+"""
 iteration_number = 0
 route = copy.deepcopy(first_route)
 using_truck = first_using_truck
@@ -2030,7 +2030,7 @@ print(route)
 print(route_possibility(route))
 print("objective_value",objective_value)
 """
-
+"""
 iteration_number = 0
 route = copy.deepcopy(first_route)
 using_truck = first_using_truck
@@ -2172,6 +2172,7 @@ ax.plot(A,n4,label = (R1,R2,R3))
 ax.legend(loc='upper right')
 plt.show()
 """
+"""
 fig, ax = plt.subplots()
 ax.plot(A,n1,label = "(D1,D2)")
 ax.plot(A,n2,label = "(D1,D2,D4)")
@@ -2183,6 +2184,7 @@ ax.plot(A,n2,label = "(D1,D2,D4)")
 ax.legend(loc='upper right')
 plt.show()
 """
+"""
 fig, ax = plt.subplots()
 ax.plot(A,n1,label = R22)
 ax.plot(A,n2,label = R2)
@@ -2190,4 +2192,4 @@ ax.legend(loc='upper right')
 plt.show()
 """
 #print("time:",end-start)
-#visualize(route)
+visualize(route)
